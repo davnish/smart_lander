@@ -1,0 +1,25 @@
+* DQ_1
+    Episode : 500
+    Time : 38s
+    Ep_Solved : 56
+    High_Score : 2
+    avg_intv : 20
+* DQ_2 
+    Episode : 1000
+    Time : 110s
+    Ep_Solved : 187
+    High_Score : 39
+    avg_intv : 40
+* DQ_3
+    Episode : 1500
+    Time : 306s
+    Ep_Solved : 595
+    High_Score : 263
+    avg_intv : 60
+* DQ_4
+    Episode : 2000
+    Time : 323s
+    Ep_Solved : 805
+    High_Score : 403
+    avg_intv : 80
+

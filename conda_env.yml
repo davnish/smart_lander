@@ -1,0 +1,11 @@
+name: cartpole
+channels:
+  - defaults
+dependencies:
+  - swig
+  - pillow
+  - conda-forge::matplotlib
+  - pytorch
+  - pandas
+  - conda-forge::moviepy
+  - anaconda::chardet

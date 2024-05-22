@@ -1,0 +1,25 @@
+* Q_1
+    Episode : 500
+    Time : 0.39s
+    Ep_Solved : 0
+    High_Score : 0
+    avg_intv : 20
+* Q_2 
+    Episode : 1000
+    Time : 2.0s
+    Ep_Solved : 4
+    High_Score : 0
+    avg_intv : 40
+* Q_3
+    Episode : 10000
+    Time : 61s
+    Ep_Solved : 1953
+    High_Score : 496
+    avg_intv : 400
+* Q_4
+    Episode : 20000
+    Time : 314s
+    Ep_Solved : 12022
+    High_Score : 7154
+    avg_intv : 800
+
