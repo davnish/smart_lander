@@ -10,7 +10,7 @@ import numpy as np
 
 
 def Simulate_DQ_Strategy(model_no, games = 6):
-    env = gym.make('LunarLander-v2', render_mode='human')
+    env = gym.make('LunarLander-v3', render_mode='human')
     onlineNetwork = createNetwork(8, 4)
     onlineNetwork.load_state_dict(torch.load(os.path.join('models', f"DQ_{model_no}.pt")))
     for _ in range(games):
@@ -31,7 +31,7 @@ def Simulate_DQ_Strategy(model_no, games = 6):
         print(f"Simulation Reward: {rewards}")
 
 def saving_video(model_no, games = 1):
-    env = gym.make('LunarLander-v2', render_mode="rgb_array_list")
+    env = gym.make('LunarLander-v3', render_mode="rgb_array_list")
     env.action_space.seed(42)
     onlineNetwork = createNetwork(4, 2)
     onlineNetwork.load_state_dict(torch.load(os.path.join('models', f"DQ_{model_no}.pt")))

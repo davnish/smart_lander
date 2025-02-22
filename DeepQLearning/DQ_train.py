@@ -79,7 +79,7 @@ class DeepQLearning:
         self.targetNetwork.load_state_dict(self.onlineNetwork.state_dict()) # Setting the weights of online network -> target network 
 
         self.loss_fn = nn.MSELoss()
-        self.optimizer = torch.optim.Adam(self.onlineNetwork.parameters(), lr = self.lr)
+        self.optimizer = torch.optim.AdamW(self.onlineNetwork.parameters(), lr = self.lr) # Adding weight decay
     
     def trainigEpisodes(self):
 
@@ -182,17 +182,17 @@ if __name__ == "__main__":
 
     # Explanation of every hyperparameter is in the docstirng of `DeepQLearning` class
     # Hyperparameters ###########
-    model_no = 3
+    model_no = 4
     numberEpisodes = 1000
-    model_name = 'LunarLander-v2'
+    model_name = 'LunarLander-v3'
     gamma = 0.99
     epsilon = 1
-    epsilon_decay = 0.995
-    epsilon_end = 0.05
+    epsilon_decay = 0.992 # changing this from 0.995
+    epsilon_end = 0.1 # Changing this from 0.05
     lr = 1e-4
     TAU = 0.001
-    replayBufferSize = 10000
-    batchReplayBufferSize = 128
+    replayBufferSize = 1000
+    batchReplayBufferSize = 256
     #############################
 
     env = gym.make(model_name)
